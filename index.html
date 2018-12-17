@@ -1,0 +1,162 @@
+<!Doctype html>
+
+<html>
+  <head>
+    <title> Final </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src ="Resizer/js/imageMapResizer.js"></script>
+    <link rel="stylesheet" type="text/css" href="tBlog.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!--Top bar -->
+  <div class="container1">
+  </div>
+
+  <!--Navigation Bar-->
+  <div class="container2">
+    <ul>
+      <li><a class="active" href="index.html"> Home </a></li>
+      <li><a class="active" href="AboutMe.html"> About </a> </li>
+      <li><a class="active" href="#blog"> Blogs </a> </li>
+      <li><a class="active" href="#shop"> Shop </a> </li>
+      <li><a class="active" href="#contact"> Contact </a> </li>
+    </ul>
+  </div>
+
+  <!--Image Map-->
+<div id="picContainer">
+<p>
+  <img id="mapPic" src="Images/map.png" usemap="#locMap" width=95%>
+</p>
+
+  <map name="locMap" id="locMap">
+    <area id="alberta" shape="circle" coords="247, 350, 13" alt="Alberta, Canada"
+    href="#modalPop">
+    <area id="sanFran" shape="circle" coords="216, 417, 13" alt="San Francisco, California"
+    href="#sanFranModal">
+    <area id="losAngeles" shape="circle" coords="233, 441, 13" alt="Los Angeles, California"
+    href="#modalPop">
+    <area id="chicago" shape="circle" coords="341, 406, 13" alt="Chicago, Illinois"
+    href="#modalPop">
+    <area id="cleveland" shape="circle" coords="369, 412, 13" alt="Cleveland, Ohio"
+    href="#modalPop">
+    <area id="atlanta" shape="circle" coords="360, 446, 13" alt="Atlanta, Georgia"
+    href="#atlantaModal">
+    <area id="thailand" shape="circle" coords="1054, 516, 13" alt="Thailand"
+    href="#modalPop">
+    <area id="indonesia" shape="circle" coords="1085, 579, 13" alt="Indonesia"
+    href="#indModal">
+  </map>
+</div>
+
+<!--Modals for slideshow-->
+<div id="atlantaModal" class="modal">
+  <div class=modalContent>
+    <div id="defaultCarousel" class="carouselContainer">
+      <div class = "slide fade">
+        <img src = "https://i.imgur.com/J4SLIQF.jpg" width= 100%>
+      </div>
+      <div class = "slide fade">
+        <img src = "https://i.imgur.com/lbwObQj.jpg" width= 100%>
+      </div>
+      <div class = "slide fade">
+        <img src = "https://i.imgur.com/t5sxAqF.jpg" width= 100%>
+      </div>
+      <div class = "slide fade">
+        <img src = "https://i.imgur.com/eanShWC.jpg" width= 100%>
+      </div>
+      <div class = "slide fade">
+        <img src = "https://i.imgur.com/QB4DwBZ.jpg" width= 100%>
+      </div>
+      <div class = "slide fade">
+        <img src = "https://i.imgur.com/t7qR5H9.jpg" width= 100%>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
+  </div>
+
+  <div id="sanFranModal" class="modal">
+    <div class=modalContent>
+      <div id="carouselSF" class="carouselContainer">
+        <div class = "slideSF fade">
+          <img src = "https://i.imgur.com/2su6uNR.jpg" width= 100%>
+        </div>
+        <div class = "slideSF fade">
+          <img src = "https://i.imgur.com/hGuq9IT.jpg" width= 100%>
+        </div>
+        <div class = "slideSF fade">
+          <img src = "https://i.imgur.com/JrJUiuN.jpg" width= 100%>
+        </div>
+        <a class="prev" onclick="plusSlidesSF(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlidesSF(1)">&#10095;</a>
+      </div>
+      </div>
+    </div>
+
+    <div id="indModal" class="modal">
+      <div class=modalContent>
+        <div id="carouselInd" class="carouselContainer">
+          <div class = "slideInd fade">
+            <img src = "https://i.imgur.com/Zh7D1qv.jpg" width= 100%>
+          </div>
+          <div class = "slideInd fade">
+            <img src = "https://i.imgur.com/eBBnIvm.jpg" width= 100%>
+          </div>
+          <div class = "slideInd fade">
+            <img src = "https://i.imgur.com/kT1d2t2.jpg" width= 100%>
+          </div>
+          <div class = "slideInd fade">
+            <img src = "https://i.imgur.com/rlvGimC.jpg" width= 100%>
+          </div>
+          <div class = "slideInd fade">
+            <img src = "https://i.imgur.com/wkysMlQ.jpg" width= 100%>
+          </div>
+          <a class="prev" onclick="plusSlidesInd(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlidesInd(1)">&#10095;</a>
+        </div>
+        </div>
+      </div>
+
+      <!--Blogs-->
+      <div id="blog" class="container4">
+      <h1>
+      Latest Blogs
+      </h1>
+
+      <a href="BlogHTMLSF.html">
+        <img src="https://i.imgur.com/2su6uNR.jpg" alt="SF" height = 30% width = 30%> <br>
+        <h><b>Eugene O'Neill National Historic Site, CA, USA</b></h>
+      </a>
+      <br><br>
+      <a href="BlogHTMLInd.html">
+        <img src="https://i.imgur.com/qGIIoiu.jpg" alt="Bandung" height=40% width=40%>
+        <br>
+        <h><b>Bandung, West Java, Indonesia</b></h>
+      </a>
+
+      </div>
+
+      <!--Closing Banner-->
+      <div class="container5">
+
+      <a href="https://www.instagram.com/jessemanao/" target="_blank" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+
+      <ul>
+      <li><a class="end" href="AboutMe.html"> About Us </a></li>
+      <li><a class="end" href="#PrivacyPolicy"> Privacy Policy </a> </li>
+      <li><a class="end" href="#TermsofService"> Terms of Service </a> </li>
+      <li><a class="end" href="#ContactUs"> Contact Us </a> </li>
+      </ul>
+      </div>
+
+  <script src="js/tBlog.js"></script>
+  </body>
+</html>
