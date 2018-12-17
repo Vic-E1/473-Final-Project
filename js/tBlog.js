@@ -1,3 +1,5 @@
+//Victor Jimenez
+//Adrian Ongkoputro
 $(document).ready(function(){
   //Functionality for hovering over map image
   $("#picContainer").on("mouseover",function (){
